@@ -1,0 +1,6 @@
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\bin\Debug\dom.dll
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\bin\Debug\dom.pdb
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\obj\Debug\dom.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\obj\Debug\dom.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\obj\Debug\dom.dll
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\dom\obj\Debug\dom.pdb

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frmPokemon", "frmPokemon\frmPokemon.csproj", "{A41EB144-F9AA-488D-8BB8-8324A1774B4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dom", "dom\dom.csproj", "{2F18FAF1-29B0-48BE-829A-3ECE84EB571B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "negocio", "negocio\negocio.csproj", "{C197F63E-E04F-4C78-88C1-22E6D02DE138}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A41EB144-F9AA-488D-8BB8-8324A1774B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A41EB144-F9AA-488D-8BB8-8324A1774B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A41EB144-F9AA-488D-8BB8-8324A1774B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F18FAF1-29B0-48BE-829A-3ECE84EB571B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F18FAF1-29B0-48BE-829A-3ECE84EB571B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F18FAF1-29B0-48BE-829A-3ECE84EB571B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F18FAF1-29B0-48BE-829A-3ECE84EB571B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C197F63E-E04F-4C78-88C1-22E6D02DE138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C197F63E-E04F-4C78-88C1-22E6D02DE138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C197F63E-E04F-4C78-88C1-22E6D02DE138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C197F63E-E04F-4C78-88C1-22E6D02DE138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

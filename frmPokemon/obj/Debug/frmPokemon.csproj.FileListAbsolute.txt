@@ -20,3 +20,8 @@ C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\D
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.exe
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.pdb
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\dom.dll
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\dom.pdb
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\negocio.dll
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\negocio.pdb

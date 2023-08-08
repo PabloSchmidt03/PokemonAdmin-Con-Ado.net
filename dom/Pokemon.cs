@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace frmPokemon
+namespace dom
 {
-    internal class Pokemon
+    public class Pokemon
     {
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
