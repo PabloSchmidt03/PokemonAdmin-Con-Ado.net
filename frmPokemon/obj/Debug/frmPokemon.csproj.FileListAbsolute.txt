@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\bin\Debug\frmPokemon.exe.config
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\bin\Debug\frmPokemon.exe
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\bin\Debug\frmPokemon.pdb
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.frmPokemon.resources
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.exe
+C:\Users\Usuario\Desktop\Pablo\Pokemon\AdministradorPokemon\frmPokemon\obj\Debug\frmPokemon.pdb
