@@ -30,8 +30,9 @@
         {
             this.dgvPokemon = new System.Windows.Forms.DataGridView();
             this.pbxPokemon = new System.Windows.Forms.PictureBox();
-            this.btnCargarbase = new System.Windows.Forms.Button();
+            this.btnCargarPokemon = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnIngresarPokemon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPokemon)).BeginInit();
             this.SuspendLayout();
@@ -56,18 +57,18 @@
             this.pbxPokemon.TabIndex = 1;
             this.pbxPokemon.TabStop = false;
             // 
-            // btnCargarbase
+            // btnCargarPokemon
             // 
-            this.btnCargarbase.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.btnCargarbase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarbase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarbase.Location = new System.Drawing.Point(91, 594);
-            this.btnCargarbase.Name = "btnCargarbase";
-            this.btnCargarbase.Size = new System.Drawing.Size(548, 60);
-            this.btnCargarbase.TabIndex = 2;
-            this.btnCargarbase.Text = "Cargar Pokemons";
-            this.btnCargarbase.UseVisualStyleBackColor = false;
-            this.btnCargarbase.Click += new System.EventHandler(this.button1_Click);
+            this.btnCargarPokemon.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCargarPokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarPokemon.Location = new System.Drawing.Point(91, 594);
+            this.btnCargarPokemon.Name = "btnCargarPokemon";
+            this.btnCargarPokemon.Size = new System.Drawing.Size(252, 60);
+            this.btnCargarPokemon.TabIndex = 2;
+            this.btnCargarPokemon.Text = "Cargar Pokemons";
+            this.btnCargarPokemon.UseVisualStyleBackColor = false;
+            this.btnCargarPokemon.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -80,14 +81,27 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "BIENVENIDO ENTRENADOR";
             // 
+            // btnIngresarPokemon
+            // 
+            this.btnIngresarPokemon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIngresarPokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresarPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarPokemon.Location = new System.Drawing.Point(387, 594);
+            this.btnIngresarPokemon.Name = "btnIngresarPokemon";
+            this.btnIngresarPokemon.Size = new System.Drawing.Size(252, 60);
+            this.btnIngresarPokemon.TabIndex = 4;
+            this.btnIngresarPokemon.Text = "Ingresar Pokemon";
+            this.btnIngresarPokemon.UseVisualStyleBackColor = false;
+            // 
             // frmPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1239, 761);
+            this.Controls.Add(this.btnIngresarPokemon);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCargarbase);
+            this.Controls.Add(this.btnCargarPokemon);
             this.Controls.Add(this.pbxPokemon);
             this.Controls.Add(this.dgvPokemon);
             this.MaximizeBox = false;
@@ -107,8 +121,9 @@
 
         private System.Windows.Forms.DataGridView dgvPokemon;
         private System.Windows.Forms.PictureBox pbxPokemon;
-        private System.Windows.Forms.Button btnCargarbase;
+        private System.Windows.Forms.Button btnCargarPokemon;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnIngresarPokemon;
     }
 }
 

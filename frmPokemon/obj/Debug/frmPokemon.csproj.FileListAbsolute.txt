@@ -25,3 +25,4 @@ C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\D
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\negocio.dll
 C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\bin\Debug\negocio.pdb
+C:\Users\Usuario\Desktop\Pablo\Pokemon\ConsultaDBPokemon-master\frmPokemon\obj\Debug\frmPokemon.frmAltaPokemon.resources
