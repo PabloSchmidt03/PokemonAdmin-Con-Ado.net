@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dom;
 
+
 namespace negocio
 {
      public class PokemonNegocio
@@ -22,7 +23,7 @@ namespace negocio
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=POKEDEX_DB; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "SELECT NOMBRE, P.DESCRIPCION, URLIMAGEN, E.DESCRIPCION TIPO, D.DESCRIPCION DEBILIDAD FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE E.ID = P.IDTIPO AND D.ID = P.IDDEBILIDAD";
+                comando.CommandText = "SELECT NUMERO, NOMBRE, P.DESCRIPCION, URLIMAGEN, E.DESCRIPCION TIPO, D.DESCRIPCION DEBILIDAD FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D WHERE E.ID = P.IDTIPO AND D.ID = P.IDDEBILIDAD";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -31,6 +32,7 @@ namespace negocio
                 while (lector.Read())
                 {
                     Pokemon aux = new Pokemon();
+                    aux.Numero = (int)lector["NUMERO"];
                     aux.Nombre = (string)lector["NOMBRE"];
                     aux.Descripcion = (string)lector["DESCRIPCION"];
                     aux.UrlImagen = (string)lector["URLIMAGEN"];
@@ -54,6 +56,30 @@ namespace negocio
             finally
             {
                 conexion.Close();
+            }
+        }
+
+        public void Agregar(Pokemon nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Insert into pokemons (numero, nombre, activo, descripcion, idtipo, iddebilidad,urlimagen)values(1,@nombre,1,@descripcion,@tipo,@debilidad,@url)");
+                datos.setearParametro("@nombre", nuevo.Nombre);
+                datos.setearParametro("@descripcion", nuevo.Descripcion);
+                datos.setearParametro("@tipo", nuevo.Elemento.Id);
+                datos.setearParametro("@debilidad", nuevo.Debilidad.Id);
+                datos.setearParametro("@url", nuevo.UrlImagen);
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
 

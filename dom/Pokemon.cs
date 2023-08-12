@@ -11,6 +11,7 @@ namespace dom
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string UrlImagen { get; set; }
+        public int Numero { get; set; }
         public Tipo Elemento { get; set; }
         public Tipo Debilidad { get; set; }
 

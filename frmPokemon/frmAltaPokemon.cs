@@ -1,4 +1,6 @@
-﻿using System;
+﻿using dom;
+using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,53 @@ namespace frmPokemon
         public frmAltaPokemon()
         {
             InitializeComponent();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        public void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Pokemon nuevo = new Pokemon();
+                nuevo.Numero = int.Parse(txtNumero.Text);
+                nuevo.Nombre = txbNombre.Text;
+                nuevo.Descripcion = txbDescripcion.Text;
+                nuevo.Elemento = (Tipo)cbxTipo.SelectedItem;
+                nuevo.Debilidad = (Tipo)cbxDebilidad.SelectedItem;
+                nuevo.UrlImagen = txbUrl.Text;
+
+
+                //necesito mandarlo a la db
+                PokemonNegocio nego = new PokemonNegocio();
+                nego.Agregar(nuevo);
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        private void frmAltaPokemon_Load(object sender, EventArgs e)
+        {
+            ElementoNegocio nego = new ElementoNegocio();
+            try
+            {
+                cbxDebilidad.DataSource = nego.listar();
+                cbxTipo.DataSource = nego.listar();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

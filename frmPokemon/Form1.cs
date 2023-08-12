@@ -32,7 +32,22 @@ namespace frmPokemon
         private void dgvPokemon_SelectionChanged(object sender, EventArgs e)
         {
             Pokemon selected = (Pokemon)dgvPokemon.CurrentRow.DataBoundItem;
-            pbxPokemon.Load(selected.UrlImagen);
+            try
+            {
+                pbxPokemon.Load(selected.UrlImagen);
+            }
+            catch (Exception)
+            {
+
+                pbxPokemon.Load("https://w7.pngwing.com/pngs/785/530/png-transparent-desktop-computer-icons-empty-banner-angle-rectangle-photography-thumbnail.png");
+            }
+            
+        }
+
+        private void btnIngresarPokemon_Click(object sender, EventArgs e)
+        {
+            frmAltaPokemon alta = new frmAltaPokemon();
+            alta.ShowDialog();
         }
     }
 }

@@ -59,5 +59,15 @@ namespace frmPokemon.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_rotom_pokedex_backgrounds_pokedex {
+            get {
+                object obj = ResourceManager.GetObject("desktop-wallpaper-rotom-pokedex-backgrounds-pokedex", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

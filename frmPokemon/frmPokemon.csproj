@@ -99,5 +99,8 @@
       <Name>negocio</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-rotom-pokedex-backgrounds-pokedex.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

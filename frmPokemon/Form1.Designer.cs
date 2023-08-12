@@ -66,7 +66,7 @@
             this.btnCargarPokemon.Name = "btnCargarPokemon";
             this.btnCargarPokemon.Size = new System.Drawing.Size(252, 60);
             this.btnCargarPokemon.TabIndex = 2;
-            this.btnCargarPokemon.Text = "Cargar Pokemons";
+            this.btnCargarPokemon.Text = "Listar Pokemons";
             this.btnCargarPokemon.UseVisualStyleBackColor = false;
             this.btnCargarPokemon.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -92,6 +92,7 @@
             this.btnIngresarPokemon.TabIndex = 4;
             this.btnIngresarPokemon.Text = "Ingresar Pokemon";
             this.btnIngresarPokemon.UseVisualStyleBackColor = false;
+            this.btnIngresarPokemon.Click += new System.EventHandler(this.btnIngresarPokemon_Click);
             // 
             // frmPokemon
             // 
