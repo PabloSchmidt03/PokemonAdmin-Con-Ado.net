@@ -42,6 +42,8 @@
             this.cbxDebilidad = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.pbxPokemonCarga = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPokemonCarga)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumero
@@ -109,28 +111,29 @@
             this.txtNumero.Location = new System.Drawing.Point(144, 79);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(100, 20);
-            this.txtNumero.TabIndex = 6;
+            this.txtNumero.TabIndex = 0;
             // 
             // txbUrl
             // 
             this.txbUrl.Location = new System.Drawing.Point(144, 180);
             this.txbUrl.Name = "txbUrl";
             this.txbUrl.Size = new System.Drawing.Size(100, 20);
-            this.txbUrl.TabIndex = 7;
+            this.txbUrl.TabIndex = 3;
+            this.txbUrl.Leave += new System.EventHandler(this.txbUrl_Leave);
             // 
             // txbDescripcion
             // 
             this.txbDescripcion.Location = new System.Drawing.Point(144, 145);
             this.txbDescripcion.Name = "txbDescripcion";
             this.txbDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.txbDescripcion.TabIndex = 8;
+            this.txbDescripcion.TabIndex = 2;
             // 
             // txbNombre
             // 
             this.txbNombre.Location = new System.Drawing.Point(144, 114);
             this.txbNombre.Name = "txbNombre";
             this.txbNombre.Size = new System.Drawing.Size(100, 20);
-            this.txbNombre.TabIndex = 9;
+            this.txbNombre.TabIndex = 1;
             // 
             // cbxTipo
             // 
@@ -138,7 +141,7 @@
             this.cbxTipo.Location = new System.Drawing.Point(144, 220);
             this.cbxTipo.Name = "cbxTipo";
             this.cbxTipo.Size = new System.Drawing.Size(121, 21);
-            this.cbxTipo.TabIndex = 10;
+            this.cbxTipo.TabIndex = 4;
             // 
             // cbxDebilidad
             // 
@@ -146,14 +149,14 @@
             this.cbxDebilidad.Location = new System.Drawing.Point(144, 264);
             this.cbxDebilidad.Name = "cbxDebilidad";
             this.cbxDebilidad.Size = new System.Drawing.Size(121, 21);
-            this.cbxDebilidad.TabIndex = 11;
+            this.cbxDebilidad.TabIndex = 5;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(55, 335);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 12;
+            this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -163,10 +166,20 @@
             this.btnCancelar.Location = new System.Drawing.Point(214, 335);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // pbxPokemonCarga
+            // 
+            this.pbxPokemonCarga.BackColor = System.Drawing.Color.Transparent;
+            this.pbxPokemonCarga.Location = new System.Drawing.Point(331, 79);
+            this.pbxPokemonCarga.Name = "pbxPokemonCarga";
+            this.pbxPokemonCarga.Size = new System.Drawing.Size(213, 213);
+            this.pbxPokemonCarga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxPokemonCarga.TabIndex = 14;
+            this.pbxPokemonCarga.TabStop = false;
             // 
             // frmAltaPokemon
             // 
@@ -174,7 +187,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::frmPokemon.Properties.Resources.desktop_wallpaper_rotom_pokedex_backgrounds_pokedex;
-            this.ClientSize = new System.Drawing.Size(363, 450);
+            this.ClientSize = new System.Drawing.Size(605, 450);
+            this.Controls.Add(this.pbxPokemonCarga);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cbxDebilidad);
@@ -193,6 +207,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAltaPokemon";
             this.Load += new System.EventHandler(this.frmAltaPokemon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPokemonCarga)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,5 +229,6 @@
         private System.Windows.Forms.ComboBox cbxDebilidad;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.PictureBox pbxPokemonCarga;
     }
 }

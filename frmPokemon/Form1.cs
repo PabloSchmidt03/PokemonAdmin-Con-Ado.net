@@ -49,5 +49,19 @@ namespace frmPokemon
             frmAltaPokemon alta = new frmAltaPokemon();
             alta.ShowDialog();
         }
+
+        private void frmPokemon_Load(object sender, EventArgs e)
+        {
+            PokemonNegocio negocio = new PokemonNegocio();
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

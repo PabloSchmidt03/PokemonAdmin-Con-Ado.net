@@ -65,5 +65,22 @@ namespace frmPokemon
                 throw;
             }
         }
+
+        private void txbUrl_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txbUrl.Text);
+        }
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbxPokemonCarga.Load(imagen);
+            }
+            catch (Exception)
+            {
+
+                pbxPokemonCarga.Load("https://w7.pngwing.com/pngs/785/530/png-transparent-desktop-computer-icons-empty-banner-angle-rectangle-photography-thumbnail.png");
+            }
+        }
     }
 }

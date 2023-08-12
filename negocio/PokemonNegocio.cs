@@ -35,7 +35,8 @@ namespace negocio
                     aux.Numero = (int)lector["NUMERO"];
                     aux.Nombre = (string)lector["NOMBRE"];
                     aux.Descripcion = (string)lector["DESCRIPCION"];
-                    aux.UrlImagen = (string)lector["URLIMAGEN"];
+                    if (!(lector["urlimagen"] is DBNull))
+                        aux.UrlImagen = (string)lector["URLIMAGEN"];
                     aux.Elemento = new Tipo();
                     aux.Elemento.Descripcion = (string)lector["TIPO"];
                     aux.Debilidad = new Tipo();
